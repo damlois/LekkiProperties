@@ -1,14 +1,32 @@
 import React from 'react';
+import './style.css'
 
 const PropertyCard = (props) => {
     return (
-        <div className="card" style={{width: '18rem'}}>
-            <img className="card-img-top" src="https://picsum.photos/200/300" alt="Card image cap" />
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
+        <div>
+            <a href='/contact-us'>
+                <div className="card mb-3">
+                    <img
+                        className="card-img-top"
+                        src={props.imageUrl}
+                        height="300px"
+                        alt={`${props.name} property at Lekki`}
+                    />
+                    <div className="card-body">
+                        <h5 className="card-title">{props.name}</h5>
+                        <p className="card-text mb-0" style={{ color: '#a3a3a3' }}>
+                            {props.description}
+                        </p>
+                        <p
+                            className='mb-0'
+                            style={{ color: "#161616", fontSize: '13px', fontWeight: '400' }}>
+                            Bedrooms: {props.numberOfBedrooms}
+                            <span className='dot mr-2 ml-2'>.</span>
+                            Bathrooms: {props.numberOfBathrooms}
+                        </p>
+                    </div>
+                </div>
+            </a>
         </div>
     );
 }

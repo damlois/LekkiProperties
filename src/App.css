@@ -1,13 +1,13 @@
 @font-face {
     font-family: "font1";
-    src: url("./assets/fonts/Lato-Regular.ttf") format("opentype");
+    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("opentype");
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: "font2";
-    src: url("./assets/fonts/Lato-Bold.ttf") format("opentype");
+    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("opentype");
     font-weight: normal;
     font-style: normal;
   }
@@ -27,9 +27,18 @@
     font-family: font2;
   }
   
+  .pre-heading-title{
+    color: #869099;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
   .heading-title{
     color: #161616;
-    font-family: "Montserrat", Sans-serif;
+    font-family: font1, Sans-serif;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -1.4px;

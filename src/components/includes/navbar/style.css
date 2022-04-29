@@ -4,3 +4,6 @@
 .navbar-brand{
     text-transform: uppercase;
 }
+a.active{
+    color: black;
+}

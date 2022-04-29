@@ -6,7 +6,7 @@ const Button = props => {
         <a href={props.href}>
             <button
                 style={props.style}
-                className={props.className}
+                className={`${props.className} btn btn-outline-primary my-2 my-sm-0`}
                 onClick={props.action}
                 id='button'
             >
