@@ -27,7 +27,7 @@ const Properties = () => {
               key={id}
               name={property.address}
               description={property.description}
-              imageUrl={property.images.length > 1 ? property.images[0].path : ""}
+              imageUrl={property.images.length >= 1 ? property.images[0].path : ""}
               numberOfBedrooms={property.bedroom}
               numberOfBathrooms={property.bathroom}
               />
